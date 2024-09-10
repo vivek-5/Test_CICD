@@ -3,7 +3,7 @@
 cd /Back_end
 node index.js &
 # run the front end
-cd /Front_end
+#cd /Front_end
 nginx -g 'daemon off;'
 
 wait -f
