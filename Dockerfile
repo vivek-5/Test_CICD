@@ -13,7 +13,7 @@ RUN cd /Front_end/ && npm config set strict-ssl=false && npm cache clean --force
 
 FROM nginx:alpine-slim AS ngi
 RUN apk add --update --no-check-certificate nodejs npm
-COPY --from=build /Front_end/dist/Front_end /usr/share/nginx/html
+COPY --from=build /Front_end/dist/angular_app /usr/share/nginx/html
 COPY /Front_end/nginx.conf  /etc/nginx/nginx.conf
 RUN chmod -R 755 /usr/share/nginx/html
 
