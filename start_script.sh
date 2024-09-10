@@ -1,9 +1,9 @@
 #!/bin/sh
 
-cd /Back-end
+cd /Back_end
 node index.js &
 # run the front end
-cd /Front-end
+cd /Front_end
 nginx -g 'daemon off;'
 
 wait -f

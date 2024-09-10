@@ -19,7 +19,7 @@ RUN chmod -R 755 /usr/share/nginx/html
 
 WORKDIR /Back_end/
 COPY ./start_script.sh /bin/start_script.sh
-COPY ./Back-end /Back_end
+COPY ./Back_end /Back_end
 
 RUN cd /Back_end/ && npm config set strict-ssl=false && npm install --no-check-certificate
 
