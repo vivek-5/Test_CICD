@@ -24,4 +24,4 @@ COPY ./Back_end /Back_end
 RUN cd /Back_end/ && npm config set strict-ssl=false && npm install --no-check-certificate
 
 EXPOSE 8001
-CMD ["/bin/start_script.sh"]
+CMD ["chmod", "+x", "/bin/start_script.sh"]
